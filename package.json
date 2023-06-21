@@ -1,0 +1,21 @@
+{
+	"name": "osw-snippets",
+	"displayName": "OpenSemanticWorld Snippets",
+	"description": "Provides snippets for OpenSemanticWorld",
+	"version": "0.0.1",
+	"publisher": "open-semantic-world",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}
