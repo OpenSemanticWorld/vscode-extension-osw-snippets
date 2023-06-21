@@ -1,0 +1,11 @@
+{
+	"createObject": {
+	"prefix": "obj",
+	"body": [
+		"{",
+		"\t$0",
+		"}"
+	],
+	"description": "Create a JSON object."
+	}
+}
