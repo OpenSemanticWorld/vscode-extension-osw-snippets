@@ -3,7 +3,7 @@
 	"displayName": "OpenSemanticWorld Snippets",
 	"description": "Provides snippets for OpenSemanticWorld",
 	"version": "0.0.2",
-	"publisher": "open-semantic-world",
+	"publisher": "osw",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/OpenSemanticWorld/vscode-extension-osw-snippets"},
