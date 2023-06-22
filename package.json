@@ -2,7 +2,7 @@
 	"name": "osw-snippets",
 	"displayName": "OpenSemanticWorld Snippets",
 	"description": "Provides snippets for OpenSemanticWorld",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "osw",
 	"repository": {
 		"type": "git",

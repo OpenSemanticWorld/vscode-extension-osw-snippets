@@ -1,11 +1,21 @@
 {
 	"createObject": {
-	"prefix": "obj",
-	"body": [
-		"{",
-		"\t$0",
-		"}"
-	],
-	"description": "Create a JSON object."
+		"prefix": "obj",
+		"body": [
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create a JSON object."
+	},
+	"label": {
+		"prefix": "label",
+		"body": [
+			"\"label\": [",
+			"    {\"text\": \"$1\", \"lang\": \"en\"},",
+			"    {\"text\": \"$2\", \"lang\": \"de\"}",
+			"],"
+		],
+		"description": "Dual language label as used in OpenSemanticLab"
 	}
 }
