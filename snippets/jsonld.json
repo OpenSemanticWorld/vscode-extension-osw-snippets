@@ -1,0 +1,15 @@
+{
+	"context": {
+		"prefix": "context",
+		"description": "Inserts the context object. The first variable is the category of which the category defined in the jsonschema is inheritting. The second variable is a property mapping.",
+		"scope": "json",
+		"body": [
+			"\"@context\": [\r",
+			"    \"/wiki/Category:$1?action=raw&slot=jsonschema\",\r",
+			"    {\r",
+			"        \"$2\": \"$3\"\r",
+			"    }\r",
+			"],$0"
+		]
+	}
+}
