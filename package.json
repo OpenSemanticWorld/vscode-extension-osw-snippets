@@ -2,7 +2,7 @@
 	"name": "osw-snippets",
 	"displayName": "OpenSemanticWorld Snippets",
 	"description": "Provides snippets for OpenSemanticWorld",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "osw",
 	"repository": {
 		"type": "git",
@@ -27,6 +27,10 @@
 			{
 				"language": "json",
 				"path": "./snippets/jsonld.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/deprecated.json"
 			}
 		]
 	}
