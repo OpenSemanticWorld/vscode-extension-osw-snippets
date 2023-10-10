@@ -149,5 +149,51 @@
 			"    }\r",
 			"},$0"
 		]
+	},
+	"propertyOfTypeQuantity": {
+		"prefix": "quantityprop",
+		"description": "Combines a quantity with a numerical value and a unit",
+		"scope": "json",
+		"body": [
+			"\"$1\": {",
+			"    \"\\$ref\": \"/wiki/JsonSchema:QuantityProperty?action=raw\",",
+			"    \"title\": \"$2\",",
+			"    \"title*\" : {",
+			"        \"de\": \"$3\"",
+			"    },",
+			"    \"description\": \"$4\",",
+			"    \"description*\" : {",
+			"        \"de\": \"$5\"",
+			"    }",
+			"},$0"
+		]
+	},
+	"propertyOfTypeQuantityCustomized": {
+		"prefix": "quantityprop_custom",
+		"description": "Combines a quantity with a numerical value and a unit. Allows to customize the quantity selection",
+		"scope": "json",
+		"body": [
+			"\"$1\": {",
+			"    \"\\$ref\": \"/wiki/JsonSchema:QuantityProperty?action=raw\",",
+			"    \"title\": \"$2\",",
+			"    \"title*\" : {",
+			"        \"de\": \"$3\"",
+			"    },",
+			"    \"description\": \"$4\",",
+			"    \"description*\" : {",
+			"        \"de\": \"$5\"",
+			"    },",
+			"    \"properties\" : {",
+			"        \"quantity\": {",
+			"             \"default\": \"Property:$6\",",
+			"             \"options\": {",
+			"                 \"autocomplete\": {",
+			"                     \"query\": \"[[Property:HasMass]]OR[[Property:$7]]|?HasLabel=label\"",
+			"                 }",
+			"             }",
+			"         }",
+			"    }",
+			"},$0"
+		]
 	}
 }
