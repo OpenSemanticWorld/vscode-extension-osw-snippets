@@ -1,7 +1,7 @@
 {
-	"context": {
-		"prefix": "context",
-		"description": "Inserts the context object. The first variable is the category of which the category defined in the jsonschema is inheritting. The second variable is a property mapping.",
+	"jsonld_context": {
+		"prefix": "jsonld_context",
+		"description": "Inserts the context object. The first variable is the category of which the category defined in the jsonschema is inheritting. The second variable is a simple literal property mapping.",
 		"scope": "json",
 		"body": [
 			"\"@context\": [\r",
@@ -10,6 +10,25 @@
 			"        \"$2\": \"$3\"\r",
 			"    }\r",
 			"],$0"
+		]
+	},
+	"jsonld_literalproperty": {
+		"prefix": "jsonld_literalproperty",
+		"description": "A jsonld literal property to create annotation and data properties. The first variable is the property name. The second variable is the property iri.",
+		"scope": "json",
+		"body": [
+			"\"$1\": \"$2\"$0"
+		]
+	},
+	"jsonld_objectproperty": {
+		"prefix": "jsonld_objectproperty",
+		"description": "A jsonld object property to create object properties. The first variable is the property name. The second variable is the property iri.",
+		"scope": "json",
+		"body": [
+			"\"$1\": {\r",
+			"    \"@id\": \"$2\"\r",
+			"    \"@type\": \"@id\"\r",
+			"}$0"
 		]
 	}
 }
